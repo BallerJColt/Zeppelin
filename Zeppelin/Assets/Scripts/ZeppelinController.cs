@@ -28,19 +28,19 @@ public class ZeppelinController : MonoBehaviour
         }
         if (Input.GetKey("w"))
         {
-            thruster.thrustMagnitude += Time.deltaTime;
+            thruster.thrustMagnitude += Time.deltaTime*3f;
         }
         if (Input.GetKey("a"))
         {
-            thruster.thrustAngle += Time.deltaTime;
+            thruster.thrustAngle += Time.deltaTime*5f;
         }
         if (Input.GetKey("s"))
         {
-            thruster.thrustMagnitude -= Time.deltaTime;
+            thruster.thrustMagnitude -= Time.deltaTime*3f;
         }
         if (Input.GetKey("d"))
         {
-            thruster.thrustAngle -= Time.deltaTime;
+            thruster.thrustAngle -= Time.deltaTime*5f;
         }
         if (Input.GetKeyUp("r"))
         {

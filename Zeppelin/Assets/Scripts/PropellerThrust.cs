@@ -37,7 +37,7 @@ public class PropellerThrust : MonoBehaviour
             thrustForce = calculateThrust();
             Vector3 thrustPosition = transform.position - transform.forward * -thrusterPosition;
             rb.AddForceAtPosition(thrustForce, thrustPosition, ForceMode.Force);
-            Debug.DrawLine(thrustPosition, thrustPosition + thrustForce * thrustMagnitude, Color.red);
+            Debug.DrawLine(thrustPosition, thrustPosition + thrustForce * Mathf.Abs(thrustMagnitude), Color.red);
         }
         else
         {
